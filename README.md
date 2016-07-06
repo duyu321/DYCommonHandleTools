@@ -6,30 +6,63 @@
 `GitHub`：[duyu321](https://github.com/duyu321) ｜ `Blog`：[duyu007(Chinese)](http://www.cnblogs.com/duyuiOS) ｜ PR is welcome,or `QQ`：291168744
 
 ## Contents 【目录】
-* [Cell Autolayout【Cell高度自适应用法简介】](#Cell_AutoLayout)
-	* [普通（简化）版【推荐使用】](#Cell_AutoLayout)
-	* [升级版(适应于cell条数少于100的tableview)](#Cell_Updated)
-* [Network Request【请求网络用法介绍】](#Network_Request)
-	* [Network Post【post请求用法】](#Network_Post)
-	* [Network Get【get请求用法】](#Network_Get)
-	* [Network DownLoad【下载文件用法】](#Network_DownLoad)
-* [Data persistence【数据持久化用法介绍】](#Data_Persistence)
-	* [CRUD--->C(Create) 【添加数据】](#CRUD_C)
-	* [CRUD--->R(Retrieve) 【查找数据】](#CRUD_R)
-	* [CRUD--->U(Updata) 【修改数据】](#CRUD_U)
-	* [CRUD--->D(Delete) 【删除数据】](#CRUD_D)
-* [Processing Image【图片处理】](#Processing_Image)
-	* [Pictures cut into a circle 【图片裁剪成圆】](#Circle_Image)
-	* [Processing Picture Color 【图片颜色处理】](#Color_Image)
-	* [Processing Picture Water 【图片水印处理】](#Water_Image)
-* [Button Countdown【按钮倒计时】](#Button_Countdown)
+* [Getting Started【开始使用】】](#Getting_Started)
+	* [Features【能做什么】](#Features)
+	* [Installation【安装】](#Installation)
+* [Examples【示例】](#Examples)
+	* [Cell Autolayout【Cell高度自适应用法简介】](#Cell_AutoLayout)
+		* [普通（简化）版【推荐使用】](#Cell_AutoLayout)
+		* [升级版(适应于cell条数少于100的tableview)](#Cell_Updated)
+	* [Network Request【请求网络用法介绍】](#Network_Request)
+		* [Network Post【post请求用法】](#Network_Post)
+		* [Network Get【get请求用法】](#Network_Get)
+		* [Network DownLoad【下载文件用法】](#Network_DownLoad)
+	* [Data persistence【数据持久化用法介绍】](#Data_Persistence)
+		* [CRUD--->C(Create) 【添加数据】](#CRUD_C)
+		* [CRUD--->R(Retrieve) 【查找数据】](#CRUD_R)
+		* [CRUD--->U(Updata) 【修改数据】](#CRUD_U)
+		* [CRUD--->D(Delete) 【删除数据】](#CRUD_D)
+	* [Processing Image【图片处理】](#Processing_Image)
+		* [Pictures cut into a circle 【图片裁剪成圆】](#Circle_Image)
+		* [Processing Picture Color 【图片颜色处理】](#Color_Image)
+		* [Processing Picture Water 【图片水印处理】](#Water_Image)
+	* [Button Countdown【按钮倒计时】](#Button_Countdown)
 
 ---
 
 
+# <a id="Getting_Started"></a> Getting Started【开始使用】
+
+## <a id="Features"></a> Features【能做什么】
+- DYCommonHandleTools是一套企业开发应用时常用到请求网络,自动布局,图片处理的等使用方法封装的工具库
+* `网络请求` : `get`、`post`、`文件下载`
+* `数据持久化` : `Create`、`Retrieve`、`Updata `、`Delete`
+* `图片处理`、`Core Data Model` --> `JSON`
+* `按钮处理` --> `裁剪成圆`、`色调处理`、`水印处理`
+* `JSONString` --> `倒计时`
+* Need only one line of code, can realize the corresponding function
+    * 只需要一行代码，就能实现对应功能
+
+## <a id="Installation"></a> Installation【安装】
+
+
+### Manually【手动导入】
+- Drag all source files under floder `Tools` to your project.【将`Tools`文件夹中的所有源代码拽入项目中】
+- Import the main header file：`#import "DYCommonHandleTools.h"`【导入主头文件：`#import "DYCommonHandleTools.h"`】
+
+```objc
+DYCommonHandleTools.h        NSObject+DY.h
+DYFMDBCommonHandleTool.h     UIColor+DY.h
+DYAFNCommonHandleTool.h      UIBarButtonItem+DY.h
+DYCategory.h                 NSDictionary+DY.h
+UIImage+DY.h                 UIButton+DY.h
+UIView+DY.h                  NSArray+DY.h
+```
+# <a id="Examples"></a> Examples【示例】
+
 ##  <a id="Cell_AutoLayout"></a> Cell Autolayout【Cell高度自适应用法简介】  
 
-#### <a id="Cell_Normal"></a> `普通（简化）版【推荐使用】：tableview 高度自适应设置只需要2步`
+### <a id="Cell_Normal"></a> 普通（简化）版【推荐使用】：tableview 高度自适应设置只需要2步
 
 ```objc
 // 1. >> 设置cell高度自适应：
@@ -49,7 +82,7 @@
 }
 ```
 
-#### <a id="Cell_Updated"></a> `升级版（适应于cell条数少于100的tableview）：tableview 高度自适应设置只需要2步`
+### <a id="Cell_Updated"></a> 升级版（适应于cell条数少于100的tableview）：tableview 高度自适应设置只需要2步
 
 
 ```objc
@@ -68,7 +101,7 @@
 	
 ## <a id="Network_Request"></a> Network Request【请求网络用法介绍】
 
-####  <a id="Network_Post"></a> `Network Post 【post请求用法】`
+###  <a id="Network_Post"></a> Network Post 【post请求用法】
 
 ```objc
 // post请求(此处的self.manager是AFHTTPSessionManager,在父类实例化即可,详细见demo)
@@ -83,7 +116,7 @@
                                      }];
 ```
     
-#### <a id="Network_Get"></a> `Network Get 【get请求用法】`
+### <a id="Network_Get"></a> Network Get 【get请求用法】
 ```objc
 // post请求(此处的self.manager是AFHTTPSessionManager,在父类实例化即可,详细见demo)
 [DYAFNCommonHandleTool executeGETWithManager:self.manager
@@ -97,7 +130,7 @@
                                      }];
 ```
     
-#### <a id="Network_DownLoad"></a> `Network DownLoad 【下载文件用法】`
+### <a id="Network_DownLoad"></a> Network DownLoad 【下载文件用法】
 
 ```objc
 // 下载文件异步操作,默认沙盒路径,可显示进度
@@ -117,7 +150,7 @@
 
 ## <a id="Data_Persistence"></a> Data persistence【数据持久化用法介绍】
 
-#### <a id="CRUD_C"></a> `CRUD--->C(Create)【添加数据】`
+### <a id="CRUD_C"></a> CRUD--->C(Create)【添加数据】
 
 ```objc
 // 添加数据操作
@@ -143,7 +176,7 @@
                                          }];
 ```
     
-#### <a id="CRUD_R"></a> `CRUD--->R(Retrieve) 【查找数据】`
+### <a id="CRUD_R"></a> CRUD--->R(Retrieve) 【查找数据】
 
 ```objc
 // 查找数据操作
@@ -162,7 +195,7 @@ NSArray *selectArray = [DYFMDBCommonHandleTool executeSelectDataWithDBName:kDBNa
 NSLog(@"%@",selectArray);
 ```
 	
-#### <a id="CRUD_U"></a> `CRUD--->U(Updata) 【修改数据】`
+### <a id="CRUD_U"></a> CRUD--->U(Updata) 【修改数据】
 
 ```objc
 // 修改数据操作
@@ -187,7 +220,7 @@ NSLog(@"%@",selectArray);
                                             }];
 ```
     
-#### <a id="CRUD_D"></a> `CRUD--->D(Delete) 【删除数据】`
+### <a id="CRUD_D"></a> CRUD--->D(Delete) 【删除数据】
 
 ```objc
 // 删除数据操作
@@ -213,7 +246,7 @@ NSLog(@"%@",selectArray);
         
 ## <a id="Processing_Image"></a> Processing Image【图片处理】
 
-#### <a id="Circle_Image"></a> Pictures cut into a circle 【图片裁剪成圆】
+### <a id="Circle_Image"></a> Pictures cut into a circle 【图片裁剪成圆】
 
 ```objc
 // borderWidth:边框宽度(传0没有边框), borderColor:边框颜色
@@ -222,7 +255,7 @@ self.iconImg.image = [UIImage circleWithImage:[UIImage imageNamed:@"index"]
                                   borderColor:[UIColor colorFromHexRGB:@"dddddd"]];
 ```
                 
-#### <a id="Color_Image"></a> Processing Picture Color 【图片颜色处理】
+### <a id="Color_Image"></a> Processing Picture Color 【图片颜色处理】
 
 ```objc
 // type: ImageTypeWhiteBlace(黑白处理),ImageTypeExposure(曝光处理),ImageTypeThin(变淡处理)
@@ -230,7 +263,7 @@ self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"]
                                        type:ImageTypeExposure];
 ```
                                            
-#### <a id="Water_Image"></a> Processing Picture Water 【图片水印处理】
+### <a id="Water_Image"></a> Processing Picture Water 【图片水印处理】
 
 ```objc
 // waterImageWithBg:需要打水印的图片, logo:水印图片
