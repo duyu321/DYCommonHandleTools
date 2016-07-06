@@ -3,7 +3,7 @@
 - 纯代码自动布局,UITableViewCell高度自适应,网络请求,数据持久化,图像处理等多种功能集成.
 
 
-GitHub：[duyu321](https://github.com/duyu321) ｜ Blog：[duyu007(Chinese)](http://www.cnblogs.com/duyuiOS) ｜ PR is welcome
+`GitHub`：[duyu321](https://github.com/duyu321) ｜ `Blog`：[duyu007(Chinese)](http://www.cnblogs.com/duyuiOS) ｜ PR is welcome,or `QQ`：291168744
 
 ## Contents 【目录】
 * [Cell Autolayout【Cell高度自适应用法简介】](#Cell_AutoLayout)
