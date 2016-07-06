@@ -62,7 +62,7 @@ UIView+DY.h                  NSArray+DY.h
 
 ##  <a id="Cell_AutoLayout"></a> Cell Autolayout【Cell高度自适应用法简介】  
 
-### <a id="Cell_Normal"></a> 普通（简化）版【推荐使用】：tableview 高度自适应设置只需要2步
+#### <a id="Cell_Normal"></a> 普通（简化）版【推荐使用】：tableview 高度自适应设置只需要2步
 
 ```objc
 // 1. >> 设置cell高度自适应：
@@ -82,7 +82,7 @@ UIView+DY.h                  NSArray+DY.h
 }
 ```
 
-### <a id="Cell_Updated"></a> 升级版（适应于cell条数少于100的tableview）：tableview 高度自适应设置只需要2步
+#### <a id="Cell_Updated"></a> 升级版（适应于cell条数少于100的tableview）：tableview 高度自适应设置只需要2步
 
 
 ```objc
@@ -101,7 +101,7 @@ UIView+DY.h                  NSArray+DY.h
 	
 ## <a id="Network_Request"></a> Network Request【请求网络用法介绍】
 
-###  <a id="Network_Post"></a> Network Post 【post请求用法】
+####  <a id="Network_Post"></a> Network Post 【post请求用法】
 
 ```objc
 // post请求(此处的self.manager是AFHTTPSessionManager,在父类实例化即可,详细见demo)
@@ -116,7 +116,7 @@ UIView+DY.h                  NSArray+DY.h
                                      }];
 ```
     
-### <a id="Network_Get"></a> Network Get 【get请求用法】
+#### <a id="Network_Get"></a> Network Get 【get请求用法】
 ```objc
 // post请求(此处的self.manager是AFHTTPSessionManager,在父类实例化即可,详细见demo)
 [DYAFNCommonHandleTool executeGETWithManager:self.manager
@@ -130,7 +130,7 @@ UIView+DY.h                  NSArray+DY.h
                                      }];
 ```
     
-### <a id="Network_DownLoad"></a> Network DownLoad 【下载文件用法】
+#### <a id="Network_DownLoad"></a> Network DownLoad 【下载文件用法】
 
 ```objc
 // 下载文件异步操作,默认沙盒路径,可显示进度
@@ -150,7 +150,7 @@ UIView+DY.h                  NSArray+DY.h
 
 ## <a id="Data_Persistence"></a> Data persistence【数据持久化用法介绍】
 
-### <a id="CRUD_C"></a> CRUD--->C(Create)【添加数据】
+#### <a id="CRUD_C"></a> CRUD--->C(Create)【添加数据】
 
 ```objc
 // 添加数据操作
@@ -176,7 +176,7 @@ UIView+DY.h                  NSArray+DY.h
                                          }];
 ```
     
-### <a id="CRUD_R"></a> CRUD--->R(Retrieve) 【查找数据】
+#### <a id="CRUD_R"></a> CRUD--->R(Retrieve) 【查找数据】
 
 ```objc
 // 查找数据操作
@@ -195,7 +195,7 @@ NSArray *selectArray = [DYFMDBCommonHandleTool executeSelectDataWithDBName:kDBNa
 NSLog(@"%@",selectArray);
 ```
 	
-### <a id="CRUD_U"></a> CRUD--->U(Updata) 【修改数据】
+#### <a id="CRUD_U"></a> CRUD--->U(Updata) 【修改数据】
 
 ```objc
 // 修改数据操作
@@ -220,7 +220,7 @@ NSLog(@"%@",selectArray);
                                             }];
 ```
     
-### <a id="CRUD_D"></a> CRUD--->D(Delete) 【删除数据】
+#### <a id="CRUD_D"></a> CRUD--->D(Delete) 【删除数据】
 
 ```objc
 // 删除数据操作
@@ -255,7 +255,7 @@ self.iconImg.image = [UIImage circleWithImage:[UIImage imageNamed:@"index"]
                                   borderColor:[UIColor colorFromHexRGB:@"dddddd"]];
 ```
                 
-### <a id="Color_Image"></a> Processing Picture Color 【图片颜色处理】
+#### <a id="Color_Image"></a> Processing Picture Color 【图片颜色处理】
 
 ```objc
 // type: ImageTypeWhiteBlace(黑白处理),ImageTypeExposure(曝光处理),ImageTypeThin(变淡处理)
@@ -263,7 +263,7 @@ self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"]
                                        type:ImageTypeExposure];
 ```
                                            
-### <a id="Water_Image"></a> Processing Picture Water 【图片水印处理】
+#### <a id="Water_Image"></a> Processing Picture Water 【图片水印处理】
 
 ```objc
 // waterImageWithBg:需要打水印的图片, logo:水印图片
