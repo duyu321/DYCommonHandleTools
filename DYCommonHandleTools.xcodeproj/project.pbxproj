@@ -290,6 +290,7 @@
 		18D188811D2CD9EA000E535E /* DYFMDBCommonHandleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYFMDBCommonHandleTool.h; sourceTree = "<group>"; };
 		18D188821D2CD9EA000E535E /* DYFMDBCommonHandleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYFMDBCommonHandleTool.m; sourceTree = "<group>"; };
 		18D1888F1D2CDA04000E535E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		18D188911D2CF40F000E535E /* DYCommonHandleTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYCommonHandleTools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -775,6 +776,7 @@
 		18D1885E1D2CD9EA000E535E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18D188911D2CF40F000E535E /* DYCommonHandleTools.h */,
 				18D188611D2CD9EA000E535E /* DYCategory */,
 				18D1885F1D2CD9EA000E535E /* DYAFNCommonHandleTool.h */,
 				18D188601D2CD9EA000E535E /* DYAFNCommonHandleTool.m */,

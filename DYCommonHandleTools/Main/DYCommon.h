@@ -1,13 +1,11 @@
 
 #import "DYBaseViewController.h"
 
+#import "DYCommonHandleTools.h"
+
 #import "AFNetworking.h"
-#import "DYAFNCommonHandleTool.h"
 
 #import "FMDB.h"
-#import "DYFMDBCommonHandleTool.h"
-
-#import "DYCategory.h"
 
 #import "MJExtension.h"
 
