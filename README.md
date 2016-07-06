@@ -22,6 +22,7 @@
 	* [Pictures cut into a circle 【图片裁剪成圆】](#Circle_Image)
 	* [Processing Picture Color 【图片颜色处理】](#Color_Image)
 	* [Processing Picture Water 【图片水印处理】](#Water_Image)
+* [Button Countdown【按钮倒计时】](#Button_Countdown)
 
 ---
 
@@ -236,6 +237,25 @@ self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"]
 self.watermarkImg.image = [UIImage waterImageWithBg:[UIImage imageNamed:@"index"]
                                                logo:[UIImage imageNamed:@"shuiyin"]];
 ```
+
+## <a id="Button_Countdown"></a> Processing Image【图片处理】
+
+```objc
+/*
+ *    倒计时按钮
+ *    @param time  			 倒计时总时间
+ *    @param title           还没倒计时的title
+ *    @param countDownTitle  倒计时的子名字 如：时、分
+ *    @param mainColor       还没倒计时的颜色
+ *    @param countColor      倒计时的颜色
+ */
+[self.btn startWithTime:59
+                  title:@"点击重新获取"
+         countDownTitle:@"s后重新获取"
+              mainColor:[UIColor colorWithRed:84 / 255.0 green:180 / 255.0 blue:98 / 255.0 alpha:1.0f]
+             countColor:[UIColor grayColor]];
+```
+
         
 ## 期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
