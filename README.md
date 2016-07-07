@@ -35,11 +35,11 @@
 
 ## <a id="Features"></a> Features【能做什么】
 - DYCommonHandleTools是一套企业开发应用时常用到请求网络,自动布局,图片处理的等使用方法封装的工具库
+* `AutoLayout` : `普通view布局`、`Cell高度自适应`
 * `网络请求` : `get`、`post`、`文件下载`
 * `数据持久化` : `Create`、`Retrieve`、`Updata `、`Delete`
-* `图片处理` : `Core Data Model` --> `JSON`
-* `按钮处理` : `裁剪成圆`、`色调处理`、`水印处理`
-* `JSONString` : `倒计时`
+* `图片处理` : `裁剪成圆`、`色调处理`、`水印处理`
+* `按钮处理` : `倒计时`
 * Need only one line of code, can realize the corresponding function
     * 只需要一行代码，就能实现对应功能
 
