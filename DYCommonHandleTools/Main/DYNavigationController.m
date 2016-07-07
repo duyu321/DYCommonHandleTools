@@ -65,6 +65,7 @@
 
 - (void)back
 {
+    [SVProgressHUD dismiss];
     [self popViewControllerAnimated:YES];
 }
 

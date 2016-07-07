@@ -398,11 +398,11 @@
 		18164BB81D12CBEB00899D8C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				18164BBD1D12CBEB00899D8C /* DYCommon.h */,
 				18164BB91D12CBEB00899D8C /* DYAPIConfig.h */,
 				18164BBA1D12CBEB00899D8C /* DYAPIConfig.m */,
 				18164BBB1D12CBEB00899D8C /* DYBaseViewController.h */,
 				18164BBC1D12CBEB00899D8C /* DYBaseViewController.m */,
-				18164BBD1D12CBEB00899D8C /* DYCommon.h */,
 				18164BBE1D12CBEB00899D8C /* DYNavigationController.h */,
 				18164BBF1D12CBEB00899D8C /* DYNavigationController.m */,
 			);

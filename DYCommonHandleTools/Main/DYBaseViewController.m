@@ -73,6 +73,7 @@
     if (gestureRecognizer == self.navigationController.interactivePopGestureRecognizer) {
         // 当前导航控制器是根视图控制器
         // the most important
+        [SVProgressHUD dismiss];
         return (self.currentShowVC == self.navigationController.topViewController);
     }
     return YES;

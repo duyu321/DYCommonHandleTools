@@ -64,7 +64,7 @@ static NSString * const cellID = @"firstCell";
     requestModel.action = @"sub";
     requestModel.c = @"topic";
     
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+//    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD show];
     
     [DYAFNCommonHandleTool executeGETWithManager:self.manager BaseUrl:baseUrl suffixUrl:nil paramters:requestModel success:^(id  _Nonnull responseObject) {
