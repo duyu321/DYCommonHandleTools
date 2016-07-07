@@ -81,6 +81,7 @@ UIView+DY.h                  NSArray+DY.h
                                  contentViewWidth:cellContentViewWith];
 }
 ```
+---
 
 #### <a id="Cell_Updated"></a> 升级版（适应于cell条数少于100的tableview）：tableview 高度自适应设置只需要2步
 
@@ -98,6 +99,8 @@ UIView+DY.h                  NSArray+DY.h
                    cellContentViewWidth:[UIScreen mainScreen].bounds.size.width];
 }
 ```
+
+---
 	
 ## <a id="Network_Request"></a> Network Request【请求网络用法介绍】
 
@@ -129,6 +132,7 @@ UIView+DY.h                  NSArray+DY.h
                                          // error code
                                      }];
 ```
+---
     
 #### <a id="Network_DownLoad"></a> Network DownLoad 【下载文件用法】
 
@@ -147,6 +151,7 @@ UIView+DY.h                  NSArray+DY.h
                                              // error code
                                          }];
 ```
+---
 
 ## <a id="Data_Persistence"></a> Data persistence【数据持久化用法介绍】
 
@@ -175,6 +180,7 @@ UIView+DY.h                  NSArray+DY.h
                                              // error code
                                          }];
 ```
+---
     
 #### <a id="CRUD_R"></a> CRUD--->R(Retrieve) 【查找数据】
 
@@ -194,6 +200,7 @@ NSArray *selectArray = [DYFMDBCommonHandleTool executeSelectDataWithDBName:kDBNa
                                                          andNeedSelectData:nil];
 NSLog(@"%@",selectArray);
 ```
+---
 	
 #### <a id="CRUD_U"></a> CRUD--->U(Updata) 【修改数据】
 
@@ -219,6 +226,7 @@ NSLog(@"%@",selectArray);
                                                 // error code
                                             }];
 ```
+---
     
 #### <a id="CRUD_D"></a> CRUD--->D(Delete) 【删除数据】
 
@@ -243,6 +251,7 @@ NSLog(@"%@",selectArray);
                                                 // error code
                                             }];
 ```
+---
         
 ## <a id="Processing_Image"></a> Processing Image【图片处理】
 
@@ -254,6 +263,7 @@ self.iconImg.image = [UIImage circleWithImage:[UIImage imageNamed:@"index"]
                                   borderWidth:3
                                   borderColor:[UIColor colorFromHexRGB:@"dddddd"]];
 ```
+---
                 
 #### <a id="Color_Image"></a> Processing Picture Color 【图片颜色处理】
 
@@ -262,6 +272,7 @@ self.iconImg.image = [UIImage circleWithImage:[UIImage imageNamed:@"index"]
 self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"]
                                        type:ImageTypeExposure];
 ```
+---
                                            
 #### <a id="Water_Image"></a> Processing Picture Water 【图片水印处理】
 
@@ -270,8 +281,9 @@ self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"]
 self.watermarkImg.image = [UIImage waterImageWithBg:[UIImage imageNamed:@"index"]
                                                logo:[UIImage imageNamed:@"shuiyin"]];
 ```
+---
 
-## <a id="Button_Countdown"></a> Processing Image【图片处理】
+## <a id="Button_Countdown"></a> Button Countdown【按钮倒计时】
 
 ```objc
 /*
@@ -288,7 +300,7 @@ self.watermarkImg.image = [UIImage waterImageWithBg:[UIImage imageNamed:@"index"
               mainColor:[UIColor colorWithRed:84 / 255.0 green:180 / 255.0 blue:98 / 255.0 alpha:1.0f]
              countColor:[UIColor grayColor]];
 ```
-
+---
         
 ## 期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
