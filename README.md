@@ -101,6 +101,57 @@ UIView+DY.h                  NSArray+DY.h
 ```
 
 ---
+
+#### <a id="Layout_Tips"></a> Cell高度自适应Tips
+
+```objc
+// 先给Cell上的空间分配存储空间
+self.icon = [[UIView alloc] init];
+self.icon.backgroundColor = [UIColor redColor];
+[self.contentView addSubview:self.icon];
+        
+self.nameLB = [[UILabel alloc] init];
+self.nameLB.textColor = [UIColor orangeColor];
+self.nameLB.font = [UIFont systemFontOfSize:19];
+self.nameLB.numberOfLines = 1;
+[self.contentView addSubview:self.nameLB];
+        
+self.detailLB = [[UILabel alloc] init];
+self.detailLB.textColor = [UIColor grayColor];
+self.detailLB.font = [UIFont systemFontOfSize:13];
+self.detailLB.numberOfLines = 0;
+[self.contentView addSubview:self.detailLB];
+        
+        
+// 设置约束
+CGFloat margin = 10;
+        
+self.icon.sd_layout
+.topSpaceToView(self.contentView,margin)
+.leftSpaceToView(self.contentView,margin)
+.widthIs(50)
+.heightIs(50);
+
+// 设置Label时,如果不设置高度,那就用autoHeightRatio(0)自适应
+self.nameLB.sd_layout
+.topEqualToView(self.icon)
+.leftSpaceToView(self.icon,margin)
+.rightSpaceToView(self.contentView,margin)
+.autoHeightRatio(0);
+        
+self.detailLB.sd_layout
+.topSpaceToView(self.nameLB,margin-4)
+.leftEqualToView(self.nameLB)
+.rightEqualToView(self.nameLB)
+.autoHeightRatio(0);
+//        [self.detailLB setMaxNumberOfLinesToShow:6];
+
+// Cell上的控件不需要设置距离Cell最底部的距离, 在这里bottomMargin:margin设置,Cell自动布局参考控件写在BottomViewsArray数组中.
+[self setupAutoHeightWithBottomViewsArray:@[self.nameLB,self.icon,self.detailLB]
+                             bottomMargin:margin];
+```
+
+---
 	
 ## <a id="Network_Request"></a> Network Request【请求网络用法介绍】
 

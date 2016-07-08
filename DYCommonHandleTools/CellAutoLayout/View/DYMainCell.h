@@ -11,8 +11,9 @@
 
 @interface DYMainCell : UITableViewCell
 
+@property (strong, nonatomic) UIImageView *icon;
 @property (strong, nonatomic) UILabel *nameLB;
-@property (strong, nonatomic) UIView *icon;
+@property (strong, nonatomic) UILabel *detailLB;
 @property (strong, nonatomic) DYMainModel *mainModel;
 
 @end
