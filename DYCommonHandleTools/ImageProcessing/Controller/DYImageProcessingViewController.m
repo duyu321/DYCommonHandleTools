@@ -47,6 +47,23 @@
     [self setWatermark];
 }
 
+- (void)setIcon
+{
+    self.iconImg.image = [UIImage circleWithImage:[UIImage imageNamed:@"index"] borderWidth:3 borderColor:[UIColor colorFromHexRGB:@"dddddd"]];
+}
+
+- (void)setMultiple
+{
+    self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"] type:ImageTypeExposure];
+    
+    self.singleImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"] type:ImageTypeWhiteBlace];
+}
+
+- (void)setWatermark
+{
+    self.watermarkImg.image = [UIImage waterImageWithBg:[UIImage imageNamed:@"index"] logo:[UIImage imageNamed:@"shuiyin"]];
+}
+
 - (void)setupUI
 {
     self.contentView = [[UIScrollView alloc] init];
@@ -176,23 +193,6 @@
     .centerXEqualToView(self.contentView);
     
     [self.contentView setupAutoContentSizeWithBottomView:self.watermarkImg bottomMargin:20];
-}
-
-- (void)setIcon
-{
-    self.iconImg.image = [UIImage circleWithImage:[UIImage imageNamed:@"index"] borderWidth:3 borderColor:[UIColor colorFromHexRGB:@"dddddd"]];
-}
-
-- (void)setMultiple
-{
-    self.exposureImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"] type:ImageTypeExposure];
-    
-    self.singleImg.image = [UIImage grayscale:[UIImage imageNamed:@"index"] type:ImageTypeWhiteBlace];
-}
-
-- (void)setWatermark
-{
-    self.watermarkImg.image = [UIImage waterImageWithBg:[UIImage imageNamed:@"index"] logo:[UIImage imageNamed:@"shuiyin"]];
 }
 
 @end

@@ -6,4 +6,6 @@
 
 #import "DYFMDBCommonHandleTool.h"
 
+#import "UITableView+SDAutoTableViewCellHeight.h"
+
 #endif

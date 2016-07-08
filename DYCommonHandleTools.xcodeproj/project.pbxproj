@@ -77,8 +77,6 @@
 		18A3468F1D112D57005298A4 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A346841D112D57005298A4 /* NSObject+MJProperty.m */; };
 		18A346901D112D57005298A4 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A346861D112D57005298A4 /* NSString+MJExtension.m */; };
 		18A346921D112DA9005298A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A346911D112DA9005298A4 /* libsqlite3.tbd */; };
-		18A346981D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A346951D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.m */; };
-		18A346991D11306F005298A4 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A346971D11306F005298A4 /* UIView+SDAutoLayout.m */; };
 		18C1B2F21D2A5EF1008C7E26 /* DYCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C1B2F11D2A5EF1008C7E26 /* DYCountDownViewController.m */; };
 		18D188831D2CD9EA000E535E /* DYAFNCommonHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D188601D2CD9EA000E535E /* DYAFNCommonHandleTool.m */; };
 		18D188841D2CD9EA000E535E /* Foundation+DY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D188641D2CD9EA000E535E /* Foundation+DY.m */; };
@@ -112,6 +110,8 @@
 		18D9DBCB1D2E5342003BDA16 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9DBB61D2E5342003BDA16 /* UIScrollView+MJExtension.m */; };
 		18D9DBCC1D2E5342003BDA16 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9DBB81D2E5342003BDA16 /* UIScrollView+MJRefresh.m */; };
 		18D9DBCD1D2E5342003BDA16 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9DBBA1D2E5342003BDA16 /* UIView+MJExtension.m */; };
+		18DC8B201D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DC8B1D1D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		18DC8B211D2FA1D300686628 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DC8B1F1D2FA1D300686628 /* UIView+SDAutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,10 +275,6 @@
 		18A346851D112D57005298A4 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		18A346861D112D57005298A4 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		18A346911D112DA9005298A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		18A346941D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
-		18A346951D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
-		18A346961D11306F005298A4 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
-		18A346971D11306F005298A4 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		18C1B2F01D2A5EF1008C7E26 /* DYCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCountDownViewController.h; sourceTree = "<group>"; };
 		18C1B2F11D2A5EF1008C7E26 /* DYCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCountDownViewController.m; sourceTree = "<group>"; };
 		18D1885F1D2CD9EA000E535E /* DYAFNCommonHandleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYAFNCommonHandleTool.h; sourceTree = "<group>"; };
@@ -346,6 +342,10 @@
 		18D9DBB81D2E5342003BDA16 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		18D9DBB91D2E5342003BDA16 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		18D9DBBA1D2E5342003BDA16 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		18DC8B1C1D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		18DC8B1D1D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		18DC8B1E1D2FA1D300686628 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		18DC8B1F1D2FA1D300686628 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -691,7 +691,6 @@
 			children = (
 				18D9DB8E1D2E5342003BDA16 /* MJRefresh */,
 				18516B881D12D4EF00A793CC /* SDWebImage */,
-				18A346931D11306F005298A4 /* SDAutoLayout */,
 				18A346711D112D57005298A4 /* MJExtension */,
 				18A346611D112D44005298A4 /* SVProgressHUD */,
 				18A346381D112A91005298A4 /* AFNetworking */,
@@ -784,17 +783,6 @@
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
-		18A346931D11306F005298A4 /* SDAutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				18A346941D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.h */,
-				18A346951D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.m */,
-				18A346961D11306F005298A4 /* UIView+SDAutoLayout.h */,
-				18A346971D11306F005298A4 /* UIView+SDAutoLayout.m */,
-			);
-			path = SDAutoLayout;
-			sourceTree = "<group>";
-		};
 		18C1B2EC1D2A5EDB008C7E26 /* ButtonCountDown */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,6 +824,7 @@
 				18D188601D2CD9EA000E535E /* DYAFNCommonHandleTool.m */,
 				18D188811D2CD9EA000E535E /* DYFMDBCommonHandleTool.h */,
 				18D188821D2CD9EA000E535E /* DYFMDBCommonHandleTool.m */,
+				18DC8B1B1D2FA1D300686628 /* SDAutoLayout */,
 				18D188611D2CD9EA000E535E /* DYCategory */,
 			);
 			path = Tools;
@@ -1042,6 +1031,17 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		18DC8B1B1D2FA1D300686628 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				18DC8B1C1D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.h */,
+				18DC8B1D1D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.m */,
+				18DC8B1E1D2FA1D300686628 /* UIView+SDAutoLayout.h */,
+				18DC8B1F1D2FA1D300686628 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1181,11 +1181,11 @@
 			files = (
 				18164BC51D12CBEB00899D8C /* DYBaseViewController.m in Sources */,
 				18823D6A1D23B22B00302837 /* DYImageProcessingViewController.m in Sources */,
+				18DC8B211D2FA1D300686628 /* UIView+SDAutoLayout.m in Sources */,
 				18516BB61D12D4EF00A793CC /* UIImage+WebP.m in Sources */,
 				18A3466D1D112D44005298A4 /* SVProgressAnimatedView.m in Sources */,
 				18D1888C1D2CD9EA000E535E /* UIImage+DY.m in Sources */,
 				18A3468F1D112D57005298A4 /* NSObject+MJProperty.m in Sources */,
-				18A346981D11306F005298A4 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				18D1888D1D2CD9EA000E535E /* UIView+DY.m in Sources */,
 				18A346581D112A91005298A4 /* AFURLSessionManager.m in Sources */,
 				18D1888B1D2CD9EA000E535E /* UIColor+DY.m in Sources */,
@@ -1193,7 +1193,6 @@
 				18516B801D12D19A00A793CC /* DYFirstRequestModel.m in Sources */,
 				18A3468B1D112D57005298A4 /* MJPropertyType.m in Sources */,
 				18D188851D2CD9EA000E535E /* NSArray+DY.m in Sources */,
-				18A346991D11306F005298A4 /* UIView+SDAutoLayout.m in Sources */,
 				18A346901D112D57005298A4 /* NSString+MJExtension.m in Sources */,
 				1896BB431D1A6A1A002AF126 /* DYLeadCell.m in Sources */,
 				18516BAB1D12D4EF00A793CC /* NSData+ImageContentType.m in Sources */,
@@ -1248,6 +1247,7 @@
 				18D9DBCC1D2E5342003BDA16 /* UIScrollView+MJRefresh.m in Sources */,
 				1801E6921D17C13A00280FFB /* DYDataModel.m in Sources */,
 				18A3468A1D112D57005298A4 /* MJPropertyKey.m in Sources */,
+				18DC8B201D2FA1D300686628 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				18A346541D112A91005298A4 /* AFNetworkReachabilityManager.m in Sources */,
 				18A346881D112D57005298A4 /* MJFoundation.m in Sources */,
 				184683771D1397FD0040E2E9 /* DYLeadViewController.m in Sources */,

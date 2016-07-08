@@ -15,7 +15,5 @@
 
 #import "UIImageView+WebCache.h"
 
-#import "UITableView+SDAutoTableViewCellHeight.h"
-
 
 #import "DYAPIConfig.h"

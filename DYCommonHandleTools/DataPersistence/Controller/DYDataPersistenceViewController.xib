@@ -117,7 +117,7 @@
                 <constraint firstItem="4ES-SS-RUs" firstAttribute="leading" secondItem="XSL-6x-bf3" secondAttribute="trailing" constant="8" id="zRK-xv-nc5"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="146" y="289"/>
+            <point key="canvasLocation" x="384" y="370"/>
         </view>
     </objects>
 </document>
