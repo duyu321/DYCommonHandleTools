@@ -70,7 +70,7 @@
 - (void)setFirst:(DYFirstResponseModel *)first
 {
     _first = first;
-    [self.icon sd_setImageWithURL:[NSURL URLWithString:first.image_list]];
+    [self.icon sd_setImageWithURL:[NSURL URLWithString:first.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.name.text = first.theme_name;
     self.fans.text = [NSString stringWithFormat:@"%zd",first.sub_number];
 }
